@@ -1,7 +1,7 @@
 {
-  "name": "stream-plugin-seed",
+  "name": "azure-event-hubs",
   "description": "Azure event hubs stream plugin.",
-  "version": "1.1.1",
+  "version": "1.0.0",
   "author": "Reekoh, Inc.",
   "main": "app.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Reekoh/stream-plugin-seed"
+    "url": "https://github.com/Reekoh/azure-event-hub-stream"
   },
   "dependencies": {
     "azure-event-hubs": "0.0.3"
