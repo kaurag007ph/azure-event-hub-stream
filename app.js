@@ -63,10 +63,10 @@ platform.once('ready', function (options) {
 			}); 
 			rx.on('message', function (message) {
 				var data = message.body;
-				platform.requestDeviceInfo(data, function (error, requestId) {						
+				platform.requestDeviceInfo(data.device, function (error, requestId) {						
 					platform.once(requestId, function (deviceInfo) {
 						if (deviceInfo)
-							platform.processData(data, JSON.stringify(data));
+							platform.processData(data.device, JSON.stringify(data));
 						else
 							platform.handleException(new Error(`Device ${data.device} not registered`));
 					});
